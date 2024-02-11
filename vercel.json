@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "commerce/wsgi.py",
+        "src": "ecommerce/wsgi.py",
         "use": "@vercel/python",
         "config": {"maxLambdaSize": "15mb", "runtime":"python 3.9"}
       }
@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "commerce/wsgi.py"
+        "dest": "ecommerce/wsgi.py"
       }
     ]
 }
